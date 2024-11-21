@@ -31,7 +31,7 @@ COPY --from=builder /opt/app .
 COPY --from=builder /opt/app/node_modules ./node_modules
 
 # Ajouter un volume pour la Media Library
-VOLUME /opt/app/public/uploads
+# VOLUME /opt/app/public/uploads
 
 # Définir le port d'exposition
 EXPOSE 1337
